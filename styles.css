@@ -44,17 +44,19 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(107, 99, 99, 0.7); /* Цвет с прозрачностью (полупрозрачный) */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     bottom: 0;
-}
+    backdrop-filter: blur(10px); /* размытие фона */
+} 
 .main{
     display:flex;
     justify-content: center;
+    padding-bottom: 100px;
 }
 .brand-name{
     font-size: 80px;

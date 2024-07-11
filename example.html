@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подсвеченный Padding</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {   border: 2px solid #000; /* Добавление черной границы */
+            background-color: yellow; /* Подсветка padding */
+            padding: 20px; /* Размер padding */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <p>чёрная граница (border), желтый padding, белое содержание</p>
+</body>
+</html>
