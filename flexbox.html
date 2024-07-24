@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8cb4de;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            flex-direction:row;
+            display: flex;
+            flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку */
+            justify-content: space-around; /* Распределяет пространство между элементами */
+            align-items: center; /* Центрирует элементы по вертикали */
+            border: 2px solid #972a2a;
+            padding: 20px;
+            background-color: #2f8dc4;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(75, 3, 3, 0.1);
+        }
+        .box {
+            flex: 1 0 277px; /* Элементы будут расти, сжиматься и занимать минимум 200px */
+            background-color: #4CAF50;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .box1 {
+            flex: 3 1 277px; /* Элементы будут расти, сжиматься и занимать минимум 200px */
+            background-color: #204061;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Demo</h1>
+    <div class="container">
+        <div class="box1">Элемент 1</div>
+        <div class="box">Элемент 2</div>
+        <div class="box">Элемент 3</div>
+        <div class="box">Элемент 4</div>
+        <div class="box">Элемент 5</div>
+        <div class="box">Элемент 6</div>
+        <div class="box">Элемент 7</div>
+    </div>
+</body>
+</html>
