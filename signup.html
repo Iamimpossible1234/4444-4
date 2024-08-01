@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Черный фон */
+            margin: 0;
+            position: relative;
+            overflow: hidden; /* Скрываем области выходящие за пределы */
+            height: 100vh; /* Задаем высоту страницы */
+            display: flex; /* Используем flexbox для центровки */
+            justify-content: center; /* Центровка по горизонтали */
+            align-items: center; /* Центровка по вертикали */
+        }
+        .signup-container {
+            background-color: #fff;
+            padding: 20px; 
+            padding-right: 80px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            position: relative;
+            z-index: 2; /* Чтобы контейнер был сверху полос */
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .stripe {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 20px; /* Высота полос */
+            box-shadow: 0 0 15px 5px; /* Добавляем эффект свечения */
+            opacity: 0.7; /* Полупрозрачность */
+        }
+        .stripe-blue {
+            background-color: #007bff;
+            top: 50px; /* Расположение синей полосы сверху */
+            box-shadow: 0 0 20px 5px #007bff; /* Светящийся синий эффект */
+        }
+        .stripe-pink {
+            background-color: #ff4081;
+            top: 100px; /* Расположение розовой полосы сверху */
+            box-shadow: 0 0 20px 5px #ff4081; /* Светящийся розовый эффект */
+        }
+        .stripe-blue-bottom {
+            background-color: #007bff;
+            bottom: 50px; /* Расположение синей полосы снизу */
+            box-shadow: 0 0 20px 5px #007bff; /* Светящийся синий эффект */
+        }
+        .stripe-pink-bottom {
+            background-color: #ff4081;
+            bottom: 100px; /* Расположение розовой полосы снизу */
+            box-shadow: 0 0 20px 5px #ff4081; /* Светящийся розовый эффект */
+        }
+        .checkboxes{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stripe stripe-blue"></div>
+    <div class="stripe stripe-pink"></div>
+    <div class="signup-container">
+        <h2>Регистрация</h2>
+        <form action="welcome.html" method="POST">
+            <div class="form-group">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required placeholder="имя пользавателя">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Возраст:</label>
+                <input type="number" id="age" name="age" min="0" max="100" step="2" required placeholder="Выберите Возраст">
+            </div>
+            <div class="form-group">
+                <label for="favorite-brand">Любимый бренд телефона:</label>
+                <select id="favorite-brand" name="favorite_brand" required>
+                    <option value="" disabled selected>Выберите бренд</option>
+                    <option value="apple">Apple</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="xiaomi">Xiaomi</option>
+                    <option value="oneplus">OnePlus</option>
+                    <option value="google">Google</option>
+                </select>
+            </div>
+            <h4>был опыт с:</h4>
+            <div class="form-group checkboxes"> 
+                <input type="checkbox" name="checkbox1"> <label for="checkbox1">Apple</label>
+                <input type="checkbox" name="checkbox2"> <label for="checkbox2">sumsung</label>
+                <input type="checkbox" name="checkbox3"> <label for="checkbox3">Xiaomi</label>
+                <input type="checkbox" name="checkbox4"> <label for="checkbox4">OnePlus</label>
+                <input type="checkbox" name="checkbox5"> <label for="checkbox5">Google</label>
+            
+            </div>
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+    
+    <div class="stripe stripe-blue-bottom"></div>
+    <div class="stripe stripe-pink-bottom"></div>
+
+</body>
+</html>

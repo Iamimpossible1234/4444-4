@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход на сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* чёрный фон */
+            margin: 0;
+            position: relative;
+            overflow: hidden; /* скрываем области, выходящие за пределы */
+            height: 100vh; /* задаем высоту страницы */
+            display: flex; /* используем flexbox для центровки */
+            justify-content: center; /* центровка по горизонтали */
+            align-items: center; /* центровка по вертикали */
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px; /* фиксируем ширину контейнера */
+            position: relative;
+            z-index: 2; /* чтобы контейнер был сверху полос */
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], 
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff; /* синий цвет */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* затемнение при наведении */
+        }
+        .stripe {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 20px; /* высота полос */
+            box-shadow: 0 0 15px 5px; /* эффект свечения */
+            opacity: 0.7; /* полупрозрачность */
+        }
+        .stripe-blue {
+            background-color: #007bff; /* синий цвет */
+            top: 50px; /* расположение синей полосы сверху */
+            box-shadow: 0 0 20px 5px #007bff; /* светящийся синий эффект */
+        }
+        .stripe-pink {
+            background-color: #ff4081; /* розовый цвет */
+            top: 100px; /* расположение розовой полосы сверху */
+            box-shadow: 0 0 20px 5px #ff4081; /* светящийся розовый эффект */
+        }
+        .stripe-blue-bottom {
+            background-color: #007bff; /* синий цвет */
+            bottom: 50px; /* расположение синей полосы снизу */
+            box-shadow: 0 0 20px 5px #007bff; /* светящийся синий эффект */
+        }
+        .stripe-pink-bottom {
+            background-color: #ff4081; /* розовый цвет */
+            bottom: 100px; /* расположение розовой полосы снизу */
+            box-shadow: 0 0 20px 5px #ff4081; /* светящийся розовый эффект */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stripe stripe-blue"></div>
+    <div class="stripe stripe-pink"></div>
+    <div class="login-container">
+        <h2>Вход на сайт</h2>
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <input type="submit" value="Войти">
+        </form>
+        <p>Нет аккаунта? <a href="signup.html">Зарегистрируйтесь</a></p>
+    </div>
+    
+    <div class="stripe stripe-blue-bottom"></div>
+    <div class="stripe stripe-pink-bottom"></div>
+
+</body>
+</html>

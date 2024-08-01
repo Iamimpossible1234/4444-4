@@ -13,6 +13,21 @@ header {
     text-align: center;
 }
 
+.back-button {
+    display: inline-block;
+    margin-top: 10px; /* Отступ сверху для лучшего визуального восприятия */
+    padding: 10px 20px; /* Внутренние отступы для кнопки */
+    background-color: #ff8c00; /* Оранжевый фон для кнопки */
+    color: #fff; /* Белый текст */
+    text-decoration: none; /* Убрать подчеркивание */
+    border-radius: 5px; /* Скругленные углы */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
+}
+
+.back-button:hover {
+    background-color: #ffa500; /* Цвет при наведении */
+}
+
 h1 {
     margin: 0;
 }
@@ -61,7 +76,33 @@ footer {
 .brand-name{
     font-size: 80px;
 }
-.image {
-    max-width: 200px;
+img {
+    max-width: 350px;
     height: auto;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px; /* Скругленные углы */
+    margin-bottom: 10px; /* Отступ снизу для лучшего визуального восприятия */
   }
+/* Общий стиль для всех изображений iPhone */
+
+hr {
+    border-top: 5px solid rgb(44, 144, 164);
+}
+
+/* Цвета границ для каждого устройства */
+.iphone12 {
+    border-color: #FF3B30; /* Красный (цвет кнопки) */
+}
+
+.iphone13 {
+    border-color: #007AFF; /* Синий цвет */
+}
+
+.iphone14 {
+    border-color: #FF9500; /* Оранжевый цвет */
+}
+
+.iphone14pro {
+    border-color: #AF52DE; /* Пурпурный цвет */
+}
