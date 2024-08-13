@@ -34,14 +34,16 @@ h1 {
 
 main {   
      display: flex;
-     flex-direction: column;
     padding: 2rem;
+    justify-content: center;
 }
 
 .brand-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+   display: grid;
+   gap:15px;
+   margin-left: 120px;
+   grid-template-columns: repeat(2,1fr);
+   
 }
 
 .brand {
@@ -49,9 +51,8 @@ main {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin: 1rem;
     padding: 1rem;
-    width: 30%;
+    width: 70%;
 }
 
 .brand h2 {
