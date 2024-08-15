@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бренды телефонов 2023</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .phone-container {
+            margin-bottom: 20px; /* Отступ между телефонами */
+            padding-bottom: 20px; /* Отступ от нижней границы */
+        }
+        .separator {
+            height: 5px; /* Толщина линии */
+            margin: 15px 0; /* Отступы вокруг линий */
+        }
+        /* Разные цвета для линий */
+        .separator-1 {
+            background-color: rgb(245, 0, 0);
+        }
+        .separator-2 {
+            background-color: rgb(21, 241, 128);
+        }
+        .separator-3 {
+            background-color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Бренды телефонов, продаваемые в 2023 году</h1>
+        <a href="index.html" class="back-button">Назад</a>
+    </header>
+    <main class="main">
+        <h1 class="brand-name">OnePlus</h1>
+        <ul>
+            <li class="phone-container">
+                <h2>OnePlus 10 Pro</h2>
+                <img class="image" style="border-color:rgb(245, 0, 0)" src="images/oneplus-10-pro.jpg" alt="OnePlus 10 Pro">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u5x5U2IYnVM?si=GpZnrcxI5-Yr5EN9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="separator separator-1"></div>
+            </li>
+            <li class="phone-container">
+                <h2>OnePlus 10T</h2>
+                <img class="image" style="border-color: rgb(21, 241, 128);" src="images/oneplus-10t.jpeg" alt="OnePlus 10T">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VWLHBvWXCfU?si=De9FbasWhSQl1FJz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="separator separator-2"></div>
+            </li>
+            <li class="phone-container">
+                <h2>OnePlus 11</h2>
+                <img class="image" style="border-color: blueviolet;" src="images/oneplus-11.jpg" alt="OnePlus 11">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v1c9gEk1bBE?si=AoTJEgNEfVFy7cdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="separator separator-3"></div>
+            </li>
+        </ul>
+
+        <!-- Секция для комментариев -->
+        <section class="comments-section">
+            <h2>Оставить комментарий</h2>
+            <form action="#" method="post">
+                <label for="comment">Ваш комментарий:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Напишите ваш комментарий здесь..."></textarea><br>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Бренды телефонов</p>
+    </footer>
+</body>
+</html>

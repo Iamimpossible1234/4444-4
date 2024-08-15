@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бренды телефонов 2023</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .phone-container {
+            margin-bottom: 20px; /* Отступ между телефонами */
+            padding-bottom: 20px; /* Отступ от нижней границы */
+        }
+        .separator {
+            height: 4px; /* Толщина линии */
+            margin: 10px 0; /* Отступы вокруг линий */
+        }
+        /* Разные цвета для линий */
+        .separator-1 {
+            background-color: red;
+        }
+        .separator-2 {
+            background-color: green;
+        }
+        .separator-3 {
+            background-color: blue;
+        }
+        .separator-4 {
+            background-color: purple;
+        }
+        .image {
+            display: block; /* Убираем отступы вокруг изображений */
+            margin: 10px 0; /* Отступы вокруг изображений */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,24 +39,32 @@
         <a href="index.html" class="back-button">Назад</a>
     </header>
     <main class="main">
-       <h1 class="brand-name">Xiaomi</h1>
-       <ul>
-         <li>
-            Xiaomi Mi 12
-        </li>
-        <img class="image" src="images/xiaomi-mi12.jpg">
-         <li>
-            Xiaomi Mi 13
-        </li>
-        <img class="image" src="images/xiaomi-mi13.jpg">
-         <li>
-            Xiaomi Mi 14
-        </li>
-        <img class="image" src="images/xiaomi-mi14.jpg">
-         <li>
-            Xiaomi Mi 14 Pro
-        </li>
-        <img class="image" src="images/xiaomi-mi14pro.jpg">
+        <h1 class="brand-name">Xiaomi</h1>
+        <ul>
+            <li class="phone-container">
+                <h2>Xiaomi Mi 12</h2>
+                <img class="image" src="images/xiaomi-mi12.jpg" alt="Xiaomi Mi 12">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5TyrY8EzodA?si=hyk9-R0S3MOQ4Avy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="separator separator-1"></div>
+            </li>
+            <li class="phone-container">
+                <h2>Xiaomi Mi 13</h2>
+                <img class="image" style="border-color: rgba(0, 178, 232, 0.842);" src="images/xiaomi-mi13.jpg" alt="Xiaomi Mi 13">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NPU-c97lESw?si=GBsJm-ZfKPQ83H-v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="separator separator-2"></div>
+            </li>
+            <li class="phone-container">
+                <h2>Xiaomi Mi 14</h2>
+                <img class="image" style="border-color: rgb(17, 98, 16);" src="images/xiaomi-mi14.jpeg" alt="Xiaomi Mi 14">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rRhF6bhfDAs?si=rFZBBRqv4tOmWeWq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="separator separator-3"></div>
+            </li>
+            <li class="phone-container">
+                <h2>Xiaomi Mi 14 Pro</h2>
+                <img class="image" style="border-color: rgb(174, 127, 219);" src="images/xiaomi-mi14pro.jpeg" alt="Xiaomi Mi 14 Pro">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t-pioIadYOE?si=ydE_8xZ2TugxbYHu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="separator separator-4"></div>
+            </li>
         </ul>
     </main>
     <footer>

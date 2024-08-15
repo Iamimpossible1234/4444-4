@@ -27,16 +27,14 @@ header {
 .back-button:hover {
     background-color: #ffa500; /* Цвет при наведении */
 }
-
+main {
+    margin-bottom: 100px;
+}
 h1 {
     margin: 0;
 }
 
-main {   
-     display: flex;
-    padding: 2rem;
-    justify-content: center;
-}
+
 
 .brand-list {
    display: grid;
@@ -69,11 +67,7 @@ footer {
     bottom: 0;
     backdrop-filter: blur(10px); /* размытие фона */
 } 
-.main{
-    display:flex;
-    justify-content: center;
-    padding-bottom: 100px;
-}
+
 .brand-name{
     font-size: 80px;
 }
